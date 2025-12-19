@@ -23,6 +23,17 @@ justify-content: flex-end;
 }
 
 
+
+
+@media (max-width: 40rem){
+    nav{
+        flex-direction: row;
+        width: 100%;
+        position: sticky;
+    }
+}
+
+
 h1 {
   font-size: 3.815rem;
 font-size: clamp(3.815rem, 2.4370202020202014rem + 3.626262626262627vw, 5.61rem);
@@ -45,6 +56,7 @@ font-size: clamp(1.953rem, 1.6336464646464646rem + 0.8404040404040408vw, 2.369re
 
 
 h1, h2, h3, h4, h5, h6{
+    margin: 2rem;
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
     font-style: italic;
@@ -60,27 +72,6 @@ p{
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
-
-
-
-
-
-h1{
-    font-size: 5.61rem;
-    margin: 2rem;
-}
-
-
-h2{
-    font-size: 4.209rem;
-    margin: 2rem;
-}
-
-h3{
-    font-size: 3.157rem;
-    margin: 2rem;
-}
-
 
 
 
@@ -130,11 +121,6 @@ h3{
     margin-left: 9rem;
     border-bottom: 5px solid black;
 }
-
-
-
-
-
 
 
 nav{
