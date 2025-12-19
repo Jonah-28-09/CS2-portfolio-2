@@ -22,14 +22,13 @@ flex-direction: column;
 justify-content: flex-end;
 }
 
-
-
-
 @media (max-width: 40rem){
-    nav{
+    .nav-media{
         flex-direction: row;
-        width: 100%;
-        position: sticky;
+        align-items: flex-start;
+    }
+    .email_link, .email_text, .icon{
+        display: none;
     }
 }
 
