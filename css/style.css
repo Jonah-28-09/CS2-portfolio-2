@@ -26,9 +26,19 @@ justify-content: flex-end;
     .nav-media{
         flex-direction: row;
         align-items: flex-start;
+        display: flex;
     }
-    .email_link, .email_text, .icon{
+    .icon{
         display: none;
+    }
+    .dissapear{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    .email_link{
+        padding-bottom: 20px;
     }
 }
 
@@ -65,6 +75,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 p{
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  
   font-family: "Merriweather", serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -138,6 +150,8 @@ background: linear-gradient(0deg, #C943D9, #7446DF);
 }
 
 ul{
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+
     font-family: "Merriweather", serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -168,6 +182,8 @@ li{
 }
 
 .button{
+  width: clamp(50px, 2.5vw, 100px);
+
   text-align: center;
   width: 100px;
   height: 20px;
@@ -207,6 +223,12 @@ li{
     margin-right: 3rem;
 }
 
+
+
+img{
+    width: 3.815rem;
+    width: clamp(3.815rem, 2.4370202020202014rem + 30.626262626262627vw, 50.61rem);
+}
 
 .img_left{
     margin-left: 12rem;
@@ -256,19 +278,20 @@ li{
 
 .email_link {
   border: 1px solid #12466d;
-
+  display: flex;
   display: inline-block;
   text-align: center;
   width: 125px;
   height: 20px;
   background-color: rgb(196, 196, 196);
   border-radius: 25px 25px;
-  padding: 15px 10px 20px;
+  padding: 15px 10px 35px;
   margin: 4px;
   transition: 0.1s;
 }
 
 .email_link:hover {
+
   background: #2083CF;
   background: radial-gradient(at center, #2083CF, #887EE9);
   box-shadow: 0.2rem 0.1rem 0.3rem 0.1rem rgb(49, 49, 49);
@@ -277,8 +300,13 @@ li{
 }
 
 .email_text{
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
     text-decoration: none;
     color: black;
-    padding-left: 9px;
+    padding-left: 0px;
 
 }
